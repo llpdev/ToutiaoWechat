@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+
+
+<view class="warp">
+  <text>详情页面，后续开发</text>
+  <view class="title">{{info.title}}</view>
+  <view class="img"><image src="{{info.img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+</view>

@@ -1,0 +1,17 @@
+<!--aboutme.wxml-->
+<view class="about">
+<view class="about-wei">
+  <view class="about-img"><image src="{{img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+  <view class="about-title">{{title}}</view>
+</view>
+  <view class="about-content">{{intro}}</view>
+
+  <view class="about-addr">
+  <view class="about-tab">{{contab}}</view>
+  <view>电话：{{mobile}}</view>
+  <view>邮箱：{{email}}</view>
+  <view>QQ：{{qq}}</view>
+  <view>微信号: {{address}}</view>
+  <view>商务合作：{{hezuo}}</view>
+  </view>
+</view>

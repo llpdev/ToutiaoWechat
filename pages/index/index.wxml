@@ -1,0 +1,32 @@
+<!--index.wxml-->
+
+<view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+        <view bindtap="zuixin" class="top-btn {{zuixin}}">最新</view>
+        <view bindtap="shipin" class="top-btn {{shipin}}">视频</view>
+        <view bindtap="tuijian" class="top-btn {{tuijian}}">推荐</view>
+        <view bindtap="redian" class="top-btn {{redian}}">热点</view>
+        <view bindtap="yule" class="top-btn {{yule}}">娱乐</view>
+        <view bindtap="keji" class="top-btn {{keji}}">科技</view>
+        <view bindtap="junshi" class="top-btn {{junshi}}">军事</view>
+        <view bindtap="tiyu" class="top-btn {{tiyu}}">体育</view>
+    </scroll-view>
+</view>
+
+<view style="height: 60px;"></view>
+
+<!--文章列表模板 begin-->
+<template name="itmes">
+    <navigator url="../../pages/detail/detail?id={{id}}" hover-class="navigator-hover">
+    <view class="title">{{data.subject}}</view>
+    <view class="imgs"><image src="{{'http://litchiapi.jstv.com'+ data.cover}}" class="imgs" background-size="cover" model="scaleToFill"></image></view>
+
+     </navigator>
+</template>
+<!--文章列表模板 end-->
+
+<!--循环输出列表 begin-->
+<view wx:for="{{newsList}}">
+  <template is="itmes" data="{{...item}}" />
+</view>
+<!--循环输出列表 end-->

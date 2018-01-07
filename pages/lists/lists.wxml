@@ -1,0 +1,28 @@
+<!--lists.wxml-->
+<view class="warp">
+
+<!--文章列表模板 begin-->
+<template name="itmes">
+  <navigator url="../../pages/detail/detail?id={{id}}" hover-class="navigator-hover">
+    <view class="imgs"><image src="{{img}}" class="in-img" background-size="cover" model="scaleToFill"></image></view>
+    <view class="infos">
+      <view class="title">{{title}}</view>
+      <view class="date">{{cTime}}</view>
+    </view>
+  </navigator>
+</template>
+<!--文章列表模板 end-->
+
+<!--循环输出列表 begin-->
+<view wx:for="{{newsList}}" class="list">
+  <template is="itmes" data="{{...item}}" />
+</view>
+<!--循环输出列表 end-->
+<loading hidden="{{loadHidden}}" bindchange="loadChange">
+    数据加载中...
+</loading>
+
+<view bindtap="loadMore" data-lastid="{{lastid}}" data-isfrist="{{isfrist}}" class="loadMore" style="display:{{moreHidden}}">加载更多</view>
+<toast hidden="{{toastHidden}}" bindchange="toastChange" duration="3000">{{msg}}</toast>
+<modal title="温馨提示" no-cancel hidden="{{confirmHidden}}" confirm-text="明确" bindconfirm="modalChange">你当前不在在WIFI网格下下，会产生流量费用</modal>
+</view>

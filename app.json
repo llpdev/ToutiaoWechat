@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Toutiao",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"" ,
+    "selectedColor":"#3DB5FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab_icon_home_normal.png",
+        "selectedIconPath": "images/tab_icon_home_click.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "发布信息",
+        "iconPath": "images/icon_icon_center_nomal.png",
+        "selectedIconPath": "images/icon_icon_center_nomal_click.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "images/tab_icon_personal_center_nomal.png",
+        "selectedIconPath": "images/tab_icon_personal_center_click.png"
+      }
+    ]
+  }
+}
