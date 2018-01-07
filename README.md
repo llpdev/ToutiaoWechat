@@ -107,6 +107,6 @@ pages属性：接受一个数组，每一项都是字符串，来指定小程序
 
 https://mp.weixin.qq.com/debug/wxadoc/dev/api/
 
-
+**欢迎关注公众号：程序IT圈**
 
 ![img](https://mmbiz.qpic.cn/mmbiz_jpg/IibUVnJ665WoZ0u4Nia6lfNkpwM9WGiab49O1cibKib6QLHW2iaF6oXTSIdPCaMjJWDbzfrcTlQeBXiaC0BBRqrEjMVjA/0?wx_fmt=jpeg)
